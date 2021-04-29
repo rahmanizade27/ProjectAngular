@@ -1,0 +1,13 @@
+.btnlogin{
+    margin: 5000px auto;
+}
+
+.icon {
+    display: inline-block;
+    height: 30px;
+    margin: 10 auto;
+    padding-right: 5px;
+    text-align: center;
+    vertical-align: middle;
+    /* width: 25%; */
+  }
