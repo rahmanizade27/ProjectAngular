@@ -1,36 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatTabsModule } from '@angular/material/tabs';
-import {MatInputModule} from '@angular/material/input';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatListModule} from '@angular/material/list';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
+
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { LayoutsModule } from '../layouts/layouts.module';
 
 
 @NgModule({
   imports: [
     CommonModule,
-    MatTabsModule,
-    MatInputModule,
-    MatMenuModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatListModule,
-    MatIconModule,
-    MatButtonModule
+    IvyCarouselModule,
+    MatCardModule,
+    MatFormFieldModule,
+    LayoutsModule,
+    MatCardModule
   ],
   exports: [
-    MatTabsModule,
-    MatInputModule,
-    MatMenuModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatListModule,
-    MatButtonModule
+    MatCardModule,
+    MatFormFieldModule,
+    LayoutsModule
   ],
   declarations: []
 })
