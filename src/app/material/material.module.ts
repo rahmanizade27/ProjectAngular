@@ -9,17 +9,15 @@ import { LayoutsModule } from '../layouts/layouts.module';
 
 @NgModule({
   imports: [
-    CommonModule,
-    IvyCarouselModule,
-    MatCardModule,
-    MatFormFieldModule,
-    LayoutsModule,
-    MatCardModule
+    // CommonModule,
+    // IvyCarouselModule,
+    // MatCardModule,
+    // MatFormFieldModule,
+    // MatCardModule
   ],
   exports: [
-    MatCardModule,
-    MatFormFieldModule,
-    LayoutsModule
+    // MatCardModule,
+    // MatFormFieldModule,
   ],
   declarations: []
 })

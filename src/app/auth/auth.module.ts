@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
@@ -10,13 +12,12 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import {MatCardModule} from '@angular/material/card';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
-
 
 
 @NgModule({
+  declarations: [
+    SigninComponent,
+    SignupComponent],
   imports: [
     CommonModule,
     MatTabsModule,
@@ -28,21 +29,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     MatIconModule,
     MatButtonModule,
     MatCarouselModule.forRoot(),
-    MatCardModule,
-    IvyCarouselModule
-  ],
-  exports: [ 
-    MatTabsModule,
-    MatInputModule,
-    MatMenuModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatListModule,
-    MatButtonModule,
-    IvyCarouselModule
-  ],
-  declarations: [HomeComponent,]
-
+    MatCardModule
+  ]
 })
-export class LayoutsModule { }
+export class AuthModule { }

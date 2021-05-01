@@ -15,17 +15,16 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LayoutsModule } from './layouts/layouts.module';
+import { AuthModule } from './auth/auth.module';
 
 
 
 @NgModule({
   declarations: [ 
     AppComponent,
-    HomeComponent,
-    HeaderComponent,
     ProductListComponent,
-    SigninComponent,
-    SignupComponent,
+    HeaderComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -35,8 +34,8 @@ import { LayoutsModule } from './layouts/layouts.module';
     MatTabsModule,
     MatInputModule,
     AppRoutingModule,
-    
-    // MatInputModule
+    LayoutsModule,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
