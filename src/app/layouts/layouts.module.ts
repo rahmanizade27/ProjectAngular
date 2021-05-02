@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { SlickCarouselModule } from 'ngx-slick-carousel';  
 
 
 
@@ -29,7 +30,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     MatButtonModule,
     MatCarouselModule.forRoot(),
     MatCardModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    SlickCarouselModule
   ],
   exports: [ 
     MatTabsModule,
