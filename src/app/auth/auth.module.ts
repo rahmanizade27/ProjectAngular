@@ -12,6 +12,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import {MatCardModule} from '@angular/material/card';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {MatCardModule} from '@angular/material/card';
     MatIconModule,
     MatButtonModule,
     MatCarouselModule.forRoot(),
-    MatCardModule
+    MatCardModule,
+    RouterModule
   ]
 })
 export class AuthModule { }

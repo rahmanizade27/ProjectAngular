@@ -23,10 +23,11 @@ import { AuthModule } from './auth/auth.module';
   declarations: [ 
     AppComponent,
     ProductListComponent,
-    HeaderComponent
+    // HeaderComponent
     
   ],
   imports: [
+    LayoutsModule,
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
@@ -34,7 +35,6 @@ import { AuthModule } from './auth/auth.module';
     MatTabsModule,
     MatInputModule,
     AppRoutingModule,
-    LayoutsModule,
     AuthModule,
   ],
   providers: [],

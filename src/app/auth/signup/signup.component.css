@@ -1,0 +1,21 @@
+mat-card {
+    color: rgb(109, 6, 100);
+    max-width: 400px;
+    margin: 4em auto;
+    text-align: center;
+  }
+  
+  mat-form-field {
+    display: block;
+  }
+  .signup{
+    text-align: center;
+    color: rgb(238, 228, 228);
+    background-color: rgb(108, 5, 117);    
+}
+    .icon{
+
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    }

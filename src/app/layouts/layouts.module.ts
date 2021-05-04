@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { SlickCarouselModule } from 'ngx-slick-carousel';  
+import { RouterModule } from '@angular/router';
 
 
 
@@ -31,9 +32,11 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     MatCarouselModule.forRoot(),
     MatCardModule,
     IvyCarouselModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    RouterModule
   ],
   exports: [ 
+    HeaderComponent,
     MatTabsModule,
     MatInputModule,
     MatMenuModule,
@@ -44,7 +47,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     MatButtonModule,
     IvyCarouselModule
   ],
-  declarations: [HomeComponent,]
+  declarations: [HeaderComponent,HomeComponent]
 
 })
 export class LayoutsModule { }
