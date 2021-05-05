@@ -1,0 +1,14 @@
+.example-card {
+  background-color: rgb(235, 219, 235);
+  text-align: center;
+  -moz-box-align: end;
+  max-width: 250px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.btn {
+  background-color: blueviolet;
+}

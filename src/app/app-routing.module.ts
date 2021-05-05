@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductListComponent } from './product-list/product-list.component';
-import { HomeComponent } from './layouts/home/home.component';
+import { HomeComponent } from './layouts/components/home/home.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
+import { ProductListComponent } from './products/components/product-list/product-list.component';
 
 
 const routes: Routes = [
