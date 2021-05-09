@@ -13,6 +13,8 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { SlickCarouselModule } from 'ngx-slick-carousel';  
 import { RouterModule } from '@angular/router';
+import { FormsModule }   from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -32,7 +34,8 @@ import { RouterModule } from '@angular/router';
     MatSidenavModule,
     IvyCarouselModule,
     SlickCarouselModule,
-    RouterModule
+    RouterModule,FormsModule,
+    MatFormFieldModule
   ],
   exports:[MatCardModule,
     MatTabsModule,

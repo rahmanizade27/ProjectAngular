@@ -12,6 +12,7 @@ import { LayoutsModule } from './layouts/layouts.module';
 import { AuthModule } from './auth/auth.module';
 import {MatCardModule} from '@angular/material/card';
 import { ProductsModule } from './products/products.module';
+import {FormsModule} from '@angular/forms';
 
 
 
@@ -30,6 +31,7 @@ import { ProductsModule } from './products/products.module';
     AppRoutingModule,
     AuthModule,
     MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
