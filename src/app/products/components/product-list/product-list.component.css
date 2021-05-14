@@ -1,7 +1,7 @@
 .example-card {
   background-color: rgb(235, 219, 235);
   text-align: center;
-  -moz-box-align: end;
+  /* -moz-box-align: end; */
   max-width: 250px;
 }
 
@@ -11,4 +11,13 @@
 }
 .btn {
   background-color: blueviolet;
+}
+.example-card2{
+  background-color: rgb(235, 219, 235);
+  text-align: center;
+  -moz-box-align: center;
+  max-width: 250px;
+  
+  margin-left: auto;
+  
 }

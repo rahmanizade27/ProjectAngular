@@ -1,25 +1,31 @@
 <mat-card>
     <mat-card-content>
-      <form  >
+      <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()"
+      >
         <h2 ><mat-icon class="icon">person</mat-icon> Log In</h2>
         <mat-error *ngIf="">
           The username and password were not recognized
         </mat-error>
         <mat-form-field class="full-width-input">
-          <input matInput placeholder="Email" formControlName="username" required>
+          <input matInput placeholder="Username" formControlName="username" 
+          [ngClass]="{ 'is-invalid': submitted && f.username.errors }">
           <mat-error>
             Please provide a valid email address
           </mat-error>
         </mat-form-field>
         <mat-form-field class="full-width-input">
-          <input matInput type="password" placeholder="Password" formControlName="password" required>
+          <input matInput type="password" placeholder="Password" formControlName="password" 
+          [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
           <mat-error>
             Please provide a valid password
           </mat-error>
         </mat-form-field>
 
-        <button mat-raised-button color="primary">Login</button>
-        <button (click)="onSignUp" class="signup" mat-raised-button color="warn">Sign up</button>
+        <button [disabled]="loading" class="login" mat-raised-button color="primary">
+          <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+          Login</button>
+        <!-- <button (click)="onSignUp"   class="signup" mat-raised-button color="warn">Sign up</button> -->
+        <button mat-raised-button color="warn"  routerLink="../signUp" class="btn btn-link">Back To SignUp</button>
 
       </form>
     </mat-card-content>

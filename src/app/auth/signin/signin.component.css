@@ -8,8 +8,9 @@ mat-card {
   mat-form-field {
     display: block;
   }
-  .signup{
+  .login{
     margin-left: 50px;
+    background-color: rgb(108, 5, 117);    
     }
     .icon{
 
