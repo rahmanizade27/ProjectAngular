@@ -2,12 +2,9 @@
     margin-left: auto;
 }
 
-.icon {
-    display: inline-block;
+.icon{
+
     height: 30px;
-    margin: 10 auto;
-    padding-right: 5px;
     text-align: center;
     vertical-align: middle;
-    /* width: 25%; */
-  }
+    }

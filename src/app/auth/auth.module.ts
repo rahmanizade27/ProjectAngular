@@ -18,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
    SharedModule,
    FormsModule,
    HttpClientModule,ReactiveFormsModule
-  ]
+  ],
+  exports: [SignupComponent]
 })
 export class AuthModule { }

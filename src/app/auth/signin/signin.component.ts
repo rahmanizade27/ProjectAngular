@@ -23,7 +23,7 @@ export class SigninComponent implements OnInit {
       private route: ActivatedRoute,
       private router: Router,
       private authService: AuthService,
-  ) { }
+  ) {  }
 
   ngOnInit() {
       this.loginForm = this.formBuilder.group({
@@ -48,9 +48,10 @@ export class SigninComponent implements OnInit {
       this.loginForm.get('password')?.value)
         .pipe(first())
         .subscribe(
-            data => {
+            (data : any) => {
               this.router.navigate(['../home'])
                 console.log(data)
+                localStorage.setItem('token',data.token);
             },
             error => {
               console.log(error)

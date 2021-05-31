@@ -42,8 +42,10 @@ export class SignupComponent implements OnInit {
         this.form.get('password')?.value)
           .pipe(first())
           .subscribe(
-              data => {
+              (data: any) => {
                   console.log(data)
+                  localStorage.setItem('token',data.token);
+
               },
               error => {
                 console.log(error)

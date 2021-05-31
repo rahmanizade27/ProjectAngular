@@ -1,8 +1,9 @@
 .example-card {
-  background-color: rgb(235, 219, 235);
+  background-color: rgb(226, 28, 226);
   text-align: center;
-  /* -moz-box-align: end; */
+  -moz-box-align: end;
   max-width: 250px;
+
 }
 
 .example-header-image {
@@ -10,14 +11,19 @@
   background-size: cover;
 }
 .btn {
-  background-color: blueviolet;
+  background-color: rgb(31, 101, 230);
+  color: rgb(6, 6, 7);
 }
 .example-card2{
-  background-color: rgb(235, 219, 235);
+  background-color: rgb(184, 129, 184);
   text-align: center;
   -moz-box-align: center;
   max-width: 250px;
   
   margin-left: auto;
   
+}
+.sa{
+  display: flex;
+
 }

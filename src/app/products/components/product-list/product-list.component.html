@@ -1,32 +1,14 @@
-<mat-card class="example-card">
-  <img mat-card-image src="https://www.asus.com/media/global/products/t4fNeygwPZ6EeO3p/P_setting_xxx_0_90_end_2000.png" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <h2>Laptop Asus N580gd</h2>
-    <p>
-      Info: i7  12  1TB     4GB(1050)
-      <br>
-      Price:$1.952,22
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button class="btn" mat-button>Add To Cart</button>
-  </mat-card-actions>
-</mat-card>
-
-<mat-card class="example-card2">
-  <img mat-card-image src="https://www.asus.com/media/global/products/t4fNeygwPZ6EeO3p/P_setting_xxx_0_90_end_2000.png" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <h2>Laptop Asus N580gd</h2>
-    <p>
-      Info: i7  12  1TB     4GB(1050)
-      <br>
-      Price:$1.952,22
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button class="btn" mat-button>Add To Cart</button>
-  </mat-card-actions>
-</mat-card>
-
-
-
+ <div style="display: flex">
+  <div *ngFor= "let item of data">
+    <div class="example-card2"  style="margin: 1.5rem">
+      <img 
+      src="{{ item.imgSrc }}"
+      alt="photo of shiba inu"
+      style="width: 250px"/>
+      <p>{{item.name}} </p>
+      <p>{{item.info}}</p>
+      <p>{{item.price}}</p>
+      <button class="btn" mat-button ><mat-icon>shopping_cart</mat-icon> Add To Cart</button>
+    </div>
+  </div>
+</div>

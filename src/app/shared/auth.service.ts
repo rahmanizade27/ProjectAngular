@@ -25,7 +25,9 @@ export class AuthService {
   loginUser(username: string, password: string){
     return this.http
     .post('http://tavana-node.herokuapp.com/auth/login',{userName: username, password:password});
- 
+  }
+  requestGoods(){
+    return this.http.post('https://http://tavana-node.herokuapp.com/goods',{})
   }
 
 
